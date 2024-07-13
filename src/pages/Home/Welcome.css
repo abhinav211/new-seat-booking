@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    overflow: hidden;  /*Prevent scrolling */
+    display: flex;
+  flex-direction: column;
+  height: 100vh;
+  }
+ 
+  .homepage {
+    height: 100vh;
+    background: url('https://img.freepik.com/premium-photo/laptop-showing-blank-empty-white-mockup-screen-coffee-shop-restaurant-generative-ai_147933-928.jpg') no-repeat center center/cover; /* Replace with your image URL */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding to the entire container */
+  }
+ 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with reduced opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    padding: 40px; /* Add padding to the overlay */
+    box-sizing: border-box; /* Ensure padding is included in element's total width and height */
+  }
+ 
+  .content {
+    color: white;
+    padding-left: 20px; /* Add padding to the left of content */
+  }
+ 
+  h1 {
+    font-size: 4em; /* Increase the font size */
+    margin: 0;
+  }
+ 
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Add space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+  }
+ 
+  .btn {
+    padding: 10px 20px; /* Reduce padding */
+    font-size: 0.9em; /* Reduce button text size */
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px; /* Set fixed width */
+    text-align: center; /* Center text inside button */
+  }
+ 
+  .btn:hover {
+    background-color: #0056b3;
+  }
+ 
+  footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a slight background to the footer for better readability */
+    position: absolute;
+    bottom: 0;
+  }
+ 
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .overlay {
+      align-items: center; /* Center align items on smaller screens */
+      padding: 20px; /* Adjust padding */
+    }
+ 
+    .content {
+      padding-left: 0;
+      text-align: center; /* Center text */
+    }
+ 
+    .buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 10px; /* Adjust gap between buttons */
+      align-items: center; /* Center align buttons */
+    }
+ 
+    .btn {
+      width: 150px; /* Increase width on smaller screens for better readability */
+    }
+  }
+ 
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2em; /* Adjust font size for smaller screens */
+    }
+ 
+    .btn {
+      font-size: 0.9em; /* Adjust button text size */
+      padding: 8px 16px; /* Adjust button padding */
+    }
+  }

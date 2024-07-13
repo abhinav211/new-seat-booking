@@ -1,0 +1,9 @@
+.seat-selection-container {
+  padding: 20px;
+  height: 100vh; 
+}
+
+.svg-container {
+  height: calc(120vh - 120px); 
+}
+
