@@ -1,0 +1,9 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.seat-selection-container {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
